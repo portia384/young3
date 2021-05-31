@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mcuntula foundation</title>
+    <LINK rel="STYLESHEET" href="style.css">
+    </head>
+    <body>
+        <ul>
+            <div class="topnav">
+                <a class="active" href="Index.html">HOME</a>
+                  <a href="About.html">ABOUT</a>
+                  <a href="gallery.html">GALLERY</a>
+                 <a href="contact.html">CONTACT</a>
+                </div>
+         </ul> 
+         </div>
+            <div class="section" style="max-width:500px">
+                <img class="mySlides" src="help.jpg" style="width:100%"><p><b>mcuntula foundation work</p></b>
+                <img class="mySlides" src="khaya.jpg" style="width:100%">
+                <img class="mySlides" src="lucky.jpg" style="width:100%">
+                <img class="mySlides" src="picture.jpg" style="width:100%">
+              </div>
+        
+              <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); // Change image every 50 seconds
+                }
+                </script>
+                
+              
+         
+         
+          
+        
+    <footer id="walk"> 
+        <h6> &COPYRIGHT@AZILEMAGABA:ALL RIGHT SERVE </h6>   
+    </footer>
+</body>
+</html>
